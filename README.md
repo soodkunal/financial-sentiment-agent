@@ -61,12 +61,13 @@ python src/main.py
 
 Output: This will generate stock_prices.csv and sentiment_data.csv in the data/ folder.
 
-Step 2: Launch the Dashboard
+## Step 2: Launch the Dashboard
 Start the Streamlit app to visualize the results.
-
+```bash
 streamlit run src/dashboard.py
 
-📂 Project Structure
+## 📂 Project Structure
+```bash
 financial-sentiment-agent/
 ├── data/                   # Stores generated CSV files (ignored by Git)
 ├── src/
