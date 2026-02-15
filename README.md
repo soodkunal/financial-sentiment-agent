@@ -29,46 +29,69 @@ An AI-powered data pipeline that correlates financial news sentiment with stock 
 
 ## ⚙️ Setup & Installation
 
-### 1. Clone the repository
+
+### 1️⃣ Clone the Repository
+
 ```bash
-git clone [https://github.com/soodkunal/financial-sentiment-agent.git](https://github.com/soodkunal/financial-sentiment-agent.git)
+git clone https://github.com/soodkunal/financial-sentiment-agent.git
 cd financial-sentiment-agent
 
-2. Install dependencies
-It is recommended to use a virtual environment.
+---
 
+### 2️⃣ Install Dependencies
+
+```bash
 pip install -r requirements.txt
-
-3. Set up API Keys
-Get a free API key from NewsAPI.
-
+---
+🔑 Set Up API Keys
+```bash
 Open src/main.py.
-
+---
 Replace the placeholder with your actual key:
-
-3. Set up API Keys
-Get a free API key from NewsAPI.
-
-Open src/main.py.
-
-Replace the placeholder with your actual key:
+```bash
+NEWS_API_KEY = "your_api_key_here"
+---
 
 🏃‍♂️ Usage
 Step 1: Run the Data Pipeline
-Execute the main script to fetch data and perform sentiment analysis.
+
+Execute the main script to fetch stock data and perform sentiment analysis:
 
 python src/main.py
 
-Output: This will generate stock_prices.csv and sentiment_data.csv in the data/ folder.
-'''
-### Step 2: Launch the Dashboard
-Start the Streamlit app to visualize the results.
-'''
-streamlit run src/dashboard.py
-'''
+📊 Output
 
-### 📂 Project Structure
-'''
+This will generate:
+
+stock_prices.csv
+
+sentiment_data.csv
+
+inside the data/ folder.
+
+---
+
+🏃‍♂️ Usage
+Step 1: Run the Data Pipeline
+
+Execute the main script to fetch stock data and perform sentiment analysis:
+
+python src/main.py
+
+📊 Output
+
+This will generate:
+
+stock_prices.csv
+
+sentiment_data.csv
+
+inside the data/ folder.
+
+---
+
+## 📂 Project Structure
+```bash
 financial-sentiment-agent/
 ├── data/                   # Stores generated CSV files (ignored by Git)
 ├── src/
@@ -78,4 +101,3 @@ financial-sentiment-agent/
 │   └── main.py             # Orchestrator script
 ├── requirements.txt        # Python dependencies
 └── README.md               # Project documentation
-'''
