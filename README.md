@@ -38,7 +38,7 @@ cd financial-sentiment-agent
 
 ---
 
-### 2️⃣ Install Dependencies
+## 2️⃣ Install Dependencies
 
 ```bash
 pip install -r requirements.txt
