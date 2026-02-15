@@ -1,1 +1,21 @@
-NEWS_API="3f4a442ec3c843699285441b660c7695"
+# .gitignore
+
+# 1. Python artifacts
+__pycache__/
+*.py[cod]
+.venv/
+env/
+venv/
+
+# 2. Environment variables (PROTECT YOUR API KEYS!)
+.env
+.env.local
+
+# 3. Data (Too large for GitHub)
+data/
+*.csv
+*.xlsx
+*.json
+
+# 4. Jupyter Checkpoints
+.ipynb_checkpoints/
